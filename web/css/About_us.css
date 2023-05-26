@@ -1,0 +1,350 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #F0F9ED;
+   
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 共用 */
+a {
+    text-decoration: none;
+}
+
+/* header區 */
+#topbar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #164101;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+#topbar .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#topbar .link {
+    display: block;
+    padding: 12px 16px 16px 16px;
+
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    transition: all .3s;
+}
+
+#topbar .link_dona {
+    display: block;
+    margin: 6px 4px 8px 4px;
+    padding: 6px 12px 8px 12px;
+
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    background-color: #649B5B;
+    border-radius: 25px;
+    transition: all .3s;
+}
+
+#topbar .link:hover {
+    color: #a2d3ac;
+}
+
+#topbar .link_dona:hover {
+    background-color: #8db891;
+}
+
+/* 關於我們 */
+
+
+#about_us {
+    height: calc(100vh - 113px);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 150px;
+}
+
+.about_container {
+    display: flex;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about {
+    flex: 2;
+    max-width: 776px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .title {
+    display: flex;
+
+}
+
+#about .about_green_communication {
+    flex: 1;
+    background-color: #007F1C;
+    border: 5px solid #007F1C;
+    border-radius: 50px 0px 0px 50px;
+    padding: 22px 0px;
+
+}
+
+#about .about_green_communication h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+
+}
+
+#about .ideals_and_goals {
+    flex: 1;
+    border: 5px solid #007F1C;
+    border-radius: 0px 50px 50px 0px;
+    padding: 22px 0px;
+
+}
+
+#about .ideals_and_goals h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+}
+
+/* 關於綠色傳播 */
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 30px 90px;
+}
+
+.introduction_column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #6e6e6e;
+    padding: 30px 42px;
+}
+
+
+.introduction_column .mid_line {
+    height: 100%;
+    width: 1px;
+    background-color: #000000;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.text_content .text_title p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.text_content .text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* 相片 */
+
+#picture {
+    flex: 1;
+    height: 500px;
+}
+
+.photo_all{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.photo_frame {
+    position: relative;
+    max-width: 70%;
+    height: 270px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: -220px;
+    
+    
+}
+
+#picture figure{
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+}
+#picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo_1{
+    z-index: 1;
+    margin-left: 120px;
+}
+
+.photo_2{
+    z-index: 2;
+    margin-left: 80px;
+}
+
+.photo_3{
+    z-index: 3;
+    margin-left: 40px;
+}
+
+.photo_4{
+    z-index: 4;
+}
