@@ -232,18 +232,22 @@ width: 100%;
 }
 
 /* 綠色生活指南布告欄 */
+/* 綠色生活指南 */
+
 #green_life {
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #green_life .green_container {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     background: #009858;
     border-radius: 61px;
-    width: 1336px;
+    max-width: 1336px;
     height: 216px;
     padding: 40px 26px 40px 90px;
 
@@ -320,8 +324,7 @@ width: 100%;
 
 
 #green_life .green_img {
-    /* flex: 1; */
-    background-image: url("../image/greenlife_1.png");
+    background-image: url('../img/greenlive_1.png');
     width: 280px;
     height: 300px;
     background-size: 100% 100%;
