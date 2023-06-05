@@ -197,6 +197,17 @@ a {
 #topbar .link_dona:hover {
     background-color: #8db891;
 }
+/* 背景 */
+.spread_img{
+    background-image: url('../img/spread.svg');
+    position: absolute;
+    top: 180px;
+    left: -250px;
+    width: 100%;
+    max-width: 700px;
+    height: 720px;
+    background-size: 100% 100%;
+}
 
 /* 捐款好處 */
 #all {
@@ -381,7 +392,7 @@ a {
 
 
 .dividing_line {
-    margin-top: 6px;
+    margin-top: 10px;
     margin-bottom: 8px;
     background-color: black;
     width: auto;
