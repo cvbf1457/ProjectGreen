@@ -715,15 +715,6 @@ main>* {
     }
 }
 
-@media (max-width:597px) {
-    .list_item_1:nth-child(n+2) {
-        display: none;
-    }
-
-    .green_list_itembox:nth-child(n+2) {
-        display: none;
-    }
-}
 
 .list_item_text {
     width: 100%;
@@ -766,6 +757,8 @@ main>* {
 
 /* RWD */
 @media (max-width:597px) {
+
+    /* 綠色生活指南 */
     #main_bg {
         padding-top: 35%;
     }
@@ -832,4 +825,50 @@ main>* {
     .green_life_href p {
         font-size: 16px;
     }
+
+    /* 本紀專案 */
+    .green_project2 {
+        flex-direction: column;
+    }
+
+    /* 主頁內容 */
+    .green_main_p,
+    .green_main_p2 {
+        margin: 4%;
+        display: flex;
+        padding-left: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #green_main2 {
+        margin: 4%;
+        flex-wrap: wrap;
+    }
+
+    .green_main_p3 {
+        width: auto;
+    }
+
+    #green_main {
+        flex-wrap: wrap;
+    }
+
+    .green_project1 {
+        width: 70%;
+    }
+
+    /* 頁尾 */
+    .list_box_1 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:992px) {
+    .green_list_itembox{
+    margin: 0px 12px;
+    }
+   .green_list_itembox:nth-child(n+3) {
+		display: none;
+	}
 }
