@@ -927,11 +927,11 @@ main>* {
 
 .simple-pagination .current {
 	color: #FFF;
-	background-color: #8DBA78;
-	border-color: #8DBA78;
+	background-color: #007F1C;
+	border-color: #007F1C;
 }
 
 .simple-pagination .prev.current,
 .simple-pagination .next.current {
-	background: #8DBA78;
+	background: #007F1C;
 }
