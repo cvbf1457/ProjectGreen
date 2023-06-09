@@ -612,6 +612,35 @@ a {
 
 }
 
+@media (max-width:992px) {
+    .card_container .card-text{
+        display: none;
+    }
+    .card_container .card-title {
+        text-align: center;             
+    }
+    .card_container { 
+        grid-template-rows: repeat(2,265px);
+    }
+    .card_container .card {
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:767px){
+    .card_container {
+    grid-template-columns: repeat(2,1fr);
+    }
+    .card_container .card-body {
+        padding: 8px 12px 8px 12px;
+        height: 75px;
+    }
+    #sync1 .content_container {
+        left: 2vw;
+    }
+
+}
+
 /* 合作夥伴左列選單 */
 #partner .company_list {
     margin-right: 52px;
