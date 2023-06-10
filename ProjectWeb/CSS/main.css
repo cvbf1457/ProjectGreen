@@ -935,3 +935,9 @@ main>* {
 .simple-pagination .next.current {
 	background: #007F1C;
 }
+.list_item_p_t{
+        text-align: center;
+        font-size: 18px;
+        color: #8DBA78;
+        margin: 10px 0;
+}
