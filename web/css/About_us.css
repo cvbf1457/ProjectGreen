@@ -89,6 +89,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -110,7 +111,7 @@ body {
     line-height: 1;
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #F0F9ED;
-   
+
 }
 
 ol,
@@ -213,57 +214,15 @@ a {
     margin-right: auto;
 }
 
-#about {
-    flex: 2;
-    max-width: 776px;
-    display: flex;
-    flex-direction: column;
-}
-
-#about .title {
-    display: flex;
-
-}
-
-#about .about_green_communication {
-    flex: 1;
-    background-color: #007F1C;
-    border: 5px solid #007F1C;
-    border-radius: 50px 0px 0px 50px;
-    padding: 22px 0px;
-
-}
-
-#about .about_green_communication h2 {
-    text-align: center;
-    font-weight: 500;
-    font-size: 24px;
-    color: #FFFFFF;
-
-}
-
-#about .ideals_and_goals {
-    flex: 1;
-    border: 5px solid #007F1C;
-    border-radius: 0px 50px 50px 0px;
-    padding: 22px 0px;
-
-}
-
-#about .ideals_and_goals h2 {
-    text-align: center;
-    font-weight: 500;
-    font-size: 24px;
-    color: #000000;
-}
-
 /* 關於綠色傳播 */
 
 .text_content {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    padding: 30px 90px;
+    max-width: 596px;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    margin: auto;
 }
 
 .introduction_column {
@@ -297,6 +256,126 @@ a {
     color: #000000;
 }
 
+/* 理想與目標 */
+#tabs-2 .text_content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* JS UI */
+#tabs {
+    background: none;
+    border: none;
+    width: 100%;
+    flex: 2;
+    max-width: 776px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabs ul {
+    display: flex;
+    width: 100%;
+}
+
+.text_content{
+    animation: fade 0.2s linear;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+#tabs .about_green_communication {
+    flex: 1;
+    border: 5px solid #007F1C;
+    border-radius: 50px 0px 0px 50px;
+    padding: 22px 0px;
+    padding: 0;
+
+
+}
+
+#tabs .ideals_and_goals {
+    flex: 1;
+    border: 5px solid #007F1C;
+    border-radius: 0px 50px 50px 0px;
+    padding: 22px 0px;
+    padding: 0;
+    
+
+}
+
+#tabs a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 78px;
+}
+
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: none;
+    background: #007F1C;
+}
+
+.ui-widget-header {
+    border: none;
+    background: none;
+}
+
+.ui-widget {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1em;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 0;
+    width: 100%;
+    display: flex;
+
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    margin: 0;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 0;
+}
+
 /* 相片 */
 
 #picture {
@@ -304,10 +383,11 @@ a {
     height: 500px;
 }
 
-.photo_all{
+.photo_all {
     margin-top: 50px;
     margin-left: 20px;
 }
+
 .photo_frame {
     position: relative;
     max-width: 70%;
@@ -315,36 +395,37 @@ a {
     background-color: #FFFFFF;
     padding: 10px;
     margin-bottom: -220px;
-    
-    
+
+
 }
 
-#picture figure{
+#picture figure {
     height: 100%;
     border-radius: 32px;
     overflow: hidden;
 }
-#picture img{
+
+#picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.photo_1{
+.photo_1 {
     z-index: 1;
     margin-left: 120px;
 }
 
-.photo_2{
+.photo_2 {
     z-index: 2;
     margin-left: 80px;
 }
 
-.photo_3{
+.photo_3 {
     z-index: 3;
     margin-left: 40px;
 }
 
-.photo_4{
+.photo_4 {
     z-index: 4;
 }
