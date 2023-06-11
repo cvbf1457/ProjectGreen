@@ -6,19 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於我們</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JQUERY UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- 自訂 -->
     <link rel="stylesheet" href="./css/About_us.css">
 </head>
 
 <body>
     <!-- 導覽列 -->
     <header id="topbar">
+
         <h1 class="logo">
             <a href="../ProjectWeb/index.html">
                 <img src="./img/logo.svg" alt="傳播綠意">
             </a>
         </h1>
+
         <nav>
             <ul class="menu">
                 <li><a href="../ProjectWeb/main.html" class="link"> 聯署行動</a></li>
@@ -32,55 +35,80 @@
     <main>
         <div id="about_us">
             <div class="about_container">
-                <div id="about">
-                    <div class="title">
-                        <a class="about_green_communication">
-                            <h2>關於綠色傳播</h2>
-                        </a>
-                        <a class="ideals_and_goals">
-                            <h2>理想與目標</h2>
-                        </a>
+                <div id="tabs">
+                    <ul class="title">
+                        <li class="about_green_communication">
+                            <a href="#tabs-1">
+                                關於綠色傳播
+                            </a>
+                        </li>
+                        <li class="ideals_and_goals">
+                            <a href="#tabs-2">
+                                理想與目標
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 選單內容 -->
+                    <div id="tabs-1">
+                        <div class="text_content">
+                            <div class="introduction_column">
+                                <div class="text_title">
+                                    <p>公司名稱</p>
+                                </div>
+                                <div class="mid_line"></div>
+                                <div class="text">
+                                    <p>綠意傳播股份有限公司</p>
+                                </div>
+                            </div>
+                            <div class="introduction_column">
+                                <div class="text_title">
+                                    <p>公司地址</p>
+                                </div>
+                                <div class="mid_line"></div>
+                                <div class="text">
+                                    <p>XXX市XXX區XXX路XXX號</p>
+                                </div>
+                            </div>
+                            <div class="introduction_column">
+                                <div class="text_title">
+                                    <p>服務專線</p>
+                                </div>
+                                <div class="mid_line"></div>
+                                <div class="text">
+                                    <p>XXX-XXXXXXX</p>
+                                </div>
+                            </div>
+                            <div class="introduction_column">
+                                <div class="text_title">
+                                    <p>服務信箱</p>
+                                </div>
+                                <div class="mid_line"></div>
+                                <div class="text">
+                                    <p>XXX@XXX.com</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- 關於綠色傳播 -->
-                    <div class="text_content">
-                        <div class="introduction_column">
-                            <div class="text_title">
-                                <p>公司名稱</p>
-                            </div>
-                            <div class="mid_line"></div>
-                            <div class="text">
-                                <p>綠意傳播股份有限公司</p>
-                            </div>
-                        </div>
-                        <div class="introduction_column">
-                            <div class="text_title">
-                                <p>公司地址</p>
-                            </div>
-                            <div class="mid_line"></div>
-                            <div class="text">
-                                <p>XXX市XXX區XXX路XXX號</p>
-                            </div>
-                        </div>
-                        <div class="introduction_column">
-                            <div class="text_title">
-                                <p>服務專線</p>
-                            </div>
-                            <div class="mid_line"></div>
-                            <div class="text">
-                                <p>XXX-XXXXXXX</p>
-                            </div>
-                        </div>
-                        <div class="introduction_column">
-                            <div class="text_title">
-                                <p>服務信箱</p>
-                            </div>
-                            <div class="mid_line"></div>
-                            <div class="text">
-                                <p>XXX@XXX.com</p>
-                            </div>
+                    <div id="tabs-2">
+                        <div class="text_content">
+                            <p>
+                                我們是一家致力於環保事業的公司，成立於二○○○年。<br>
+                                我們的使命是通過提供可持續的產品和服務，促進全球的環保保護。<br>
+                                我們提供多種環保產品和解決方案，包括淨水系統、太陽能發電、風能發電、垃圾處理和回收等。我們的產品和服務旨在減少對環境的負擔，同時增強客戶的可持續發展能力。<br>
+                                <br>
+                                我們的團隊由一群充滿熱情、專業的人員組成，他們對環保事業充滿熱情且在技術方面具有深厚的專業知識。<br>    
+                                <br>
+                                我們的客戶包括個人、企業、政府機構等，我們的產品和服務被廣泛應用於家庭、辦公室、公共場所和工業領域等。<br>
+                                <br>
+                                我們自成立以來，不斷取得了一系列的成就。我們不斷致力於研發和創新，開發更多更優秀的環保產品和解決方案。同時，我們也積極參與社區和全球環保事業，通過回收和再利用等方式，為全球環境保護盡一份力。<br>
+                                <br>
+                                我們相信，透過我們的努力，可以讓更多人關注環保，促進可持續發展，打造更美好的未來。<br>
+                            </p>
                         </div>
                     </div>
                 </div>
+
+
                 <div id="picture">
                     <div class="photo_all">
                         <div class="photo_frame photo_1">
@@ -99,7 +127,16 @@
                 </div>
             </div>
         </div>
+
+
     </main>
+
+    <!-- jquery -->
+    <script src="./jquery/jquery-1.11.3.min.js"></script>
+    <!-- jquery ui -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- 自訂 -->
+    <script src="./js/About_us.js"></script>
 
 </body>
 

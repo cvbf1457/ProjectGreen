@@ -4,7 +4,7 @@ $(".list_of_activities_href").click(function () {
 		scrollTop: $("#list_of_activities").offset().top - 113
 	}, 500);
 });
-
+// 頁籤滾動
 $(".btn-bar a").click(function () {
 	$('html, body').animate({
 		scrollTop: $("#list_of_activities").offset().top - 113
@@ -266,11 +266,7 @@ $(function () {
 				if ($(this).hasClass(filterClass)) {
 					// 有找到
 					// 顯示圖片動畫效果
-					// 1.調整寬度
 					$(".container").pagify(6, `.${filterClass}`);
-					// 2.調整圖片透明度
-					// find('*')方法，將所有的li停下來
-
 				} else {
 					// 沒找到
 					//隱藏圖片(動畫 animate)
@@ -289,8 +285,7 @@ $(function () {
 	//全部顯示
 	btnAll.click(function () {
 		filterList.each(function () {
-			$(".container").pagify(6, ".in_progress,.cut_off");;
-
+			$(".container").pagify(6, ".in_progress,.cut_off");
 		});
 	});
 	//
