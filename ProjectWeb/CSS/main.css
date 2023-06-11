@@ -944,3 +944,9 @@ main>* {
         color: #8DBA78;
         margin: 10px 0;
 }
+.list_item_p {
+    text-align: center;
+    font-size: 18px;
+    color: #8DBA78;
+    margin: 10px 0;
+}
