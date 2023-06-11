@@ -803,7 +803,9 @@ main>* {
         display: none;
     }
 }
-
+.list_item{
+    padding: 0 30px;
+}
 .list_item_text {
     width: 100%;
     padding-top: 5px;
@@ -1011,4 +1013,7 @@ main>* {
         display: flex;
         flex-direction: column;
     }
+    .list_item{
+        padding: 0px;
+        }
 }
