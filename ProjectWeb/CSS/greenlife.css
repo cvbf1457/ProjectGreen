@@ -859,6 +859,12 @@ main>* {
     .green_main2 {
         margin-left: 6%;
     }
+    .list_item{
+        width: 211px;
+        }
+        .list_item_img{
+            background-position: center;
+        }
 }
 
 @media (max-width:597px) {
