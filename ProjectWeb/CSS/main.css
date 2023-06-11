@@ -898,6 +898,9 @@ main>* {
     .green_main_img {
         margin-left: 31px;
     }
+    .green_project2 {
+        flex-wrap: wrap;
+    }
 }
 /* 動畫效果分頁式 */
 #pagination-container{
