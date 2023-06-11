@@ -645,7 +645,7 @@ main>* {
 
 .list_item {
     width: 350px;
-    background: rgb(255 255 255 / 40%);
+    background: rgb(223 223 223 / 60%);
     border-radius: 28px;
     overflow: hidden;
     margin: 2%;

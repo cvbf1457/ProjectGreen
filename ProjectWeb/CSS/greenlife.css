@@ -348,6 +348,7 @@ main>* {
     border-radius: 55px;
     margin-left: 113px;
 }
+
 .green_fourbox2_item {
     width: 263px;
     height: 307px;
@@ -357,6 +358,7 @@ main>* {
     border-radius: 55px;
     margin-left: 113px;
 }
+
 .green_fourbox3_item {
     width: 263px;
     height: 307px;
@@ -366,6 +368,7 @@ main>* {
     border-radius: 55px;
     margin-left: 113px;
 }
+
 .green_fourbox4_item {
     width: 263px;
     height: 307px;
@@ -497,8 +500,9 @@ main>* {
     display: flex;
     flex-direction: column;
 }
+
 .green_main_2 {
-    margin-right:2%;
+    margin-right: 2%;
     display: flex;
     flex-direction: column;
 }
@@ -704,12 +708,15 @@ main>* {
     max-width: 436px;
     height: 30px;
 }
-.green_main_text ul li{
+
+.green_main_text ul li {
     font-size: 14px;
 }
-.green_main_text1 ul li{
+
+.green_main_text1 ul li {
     font-size: 14px;
 }
+
 .border_01 {
     font-size: 24px;
 }
@@ -796,7 +803,9 @@ main>* {
         display: none;
     }
 }
-
+.list_item{
+    padding: 0 30px;
+}
 .list_item_text {
     width: 100%;
     padding-top: 5px;
@@ -836,7 +845,21 @@ main>* {
     padding: 10px;
 }
 
+/* bootstrap圖標更換 */
+
 /* RWD區 */
+@media (max-width:992px) {
+    .green_fourbox1 {
+        flex-wrap: wrap;
+    }
+    #green_bg {
+        padding-top: 12%;
+    }
+    .green_main2 {
+        margin-left: 6%;
+    }
+}
+
 @media (max-width:597px) {
 
     #green_main,
@@ -854,14 +877,17 @@ main>* {
 }
 
 @media (max-width:987px) {
-    #green_bgsize1,#green_bgsize{
+
+    #green_bgsize1,
+    #green_bgsize {
         background-image: none;
     }
 }
 
 @media (max-width:597px) {
 
-    #green_bgsize1,#green_bgsize{
+    #green_bgsize1,
+    #green_bgsize {
         background-image: none;
     }
 }
@@ -875,16 +901,18 @@ main>* {
         justify-content: center;
         padding-right: 0%;
     }
+
     #green_bg {
         padding-top: 31%;
         display: flex;
         justify-content: center;
     }
+
     .green_bg img {
         width: 381px;
         height: 246px;
     }
-    
+
     .green_box_text {
         display: flex;
         flex-direction: column;
@@ -894,6 +922,7 @@ main>* {
         line-height: 23px;
         padding-left: 10%;
     }
+
     .greenbox_size {
         display: flex;
         width: 1493px;
@@ -901,23 +930,26 @@ main>* {
         background-color: #5B7A45;
         align-items: center;
     }
-    
+
     .green_box_text1 {
         font-size: 0.8rem;
         color: #FFFF;
         padding-left: 4px;
         padding-right: 10px;
     }
+
     .green_box_text2 {
         font-size: 1.4rem;
     }
-    
+
     .green_main h1 {
         font-size: 17px;
     }
+
     .green_main2 h1 {
         font-size: 17px;
     }
+
     .green_main_text1 {
         display: flex;
         flex-direction: column;
@@ -925,49 +957,63 @@ main>* {
         /* align-items: center; */
         margin-right: 17%;
     }
+
     .green_main1 {
-            padding-bottom: 11%;
-            padding: 1% 6%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            /* align-items: center; */
-        }
+        padding-bottom: 11%;
+        padding: 1% 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+
     .green_main_text {
         display: flex;
         flex-direction: column;
-        margin-top:0%; 
+        margin-top: 0%;
         /* align-items: center; */
     }
+
     .green_text1 {
         font-size: 1.8rem;
         line-height: 51px;
     }
+
     .green_text2 {
         font-size: 1rem;
     }
+
     .green_main_2 h1 {
         font-size: 17px;
     }
-    .green_fourbox1{
+
+    .green_fourbox1 {
         flex-direction: column;
         margin-right: 25%;
     }
-    .green_main_text ul li{
+
+    .green_main_text ul li {
         font-size: 14px;
     }
-    .green_main_text1 ul li{
+
+    .green_main_text1 ul li {
         font-size: 14px;
     }
-    .green_main_3 img{
+
+    .green_main_3 img {
         width: 200px;
     }
-    .green_main3 img{
+
+    .green_main3 img {
         width: 200px;
     }
+
     .green_main2 {
         margin-left: 6%;
         display: flex;
         flex-direction: column;
     }
+    .list_item{
+        padding: 0px;
+        }
 }

@@ -155,11 +155,13 @@ body {
 a {
     text-decoration: none;
 }
+
 main>* {
     /* 設定<main>第一層的所有元素 */
 
-width: 100%;
+    width: 100%;
 }
+
 /* header區 */
 #topbar {
     position: fixed;
@@ -324,7 +326,7 @@ width: 100%;
 
 
 #green_life .green_img {
-    background-image: url('../img/greenlive_1.png');
+    background-image: url('../image/greenlife_1.png');
     width: 280px;
     height: 300px;
     background-size: 100% 100%;
@@ -462,6 +464,44 @@ width: 100%;
     align-items: center;
     flex-direction: row;
     border-radius: 121px;
+
+}
+
+.green_main_img1 {
+    background-image: url(../image/ocean.png);
+    width: 818px;
+    height: 568px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 121px;
+    background-position: center;
+
+}
+
+.green_main_img2 {
+    background-image: url(../image/tree.jpg);
+    width: 818px;
+    height: 568px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 121px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.green_main_img3 {
+    background-image: url(../image/Polarbear.jpg);
+    width: 818px;
+    height: 568px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 121px;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -669,19 +709,12 @@ width: 100%;
     .list_item_1:nth-child(n+4) {
         display: none;
     }
+
     .green_list_itembox:nth-child(n+4) {
         display: none;
-}
+    }
 }
 
-@media (max-width:597px) {
-    .list_item_1:nth-child(n+2) {
-        display: none;
-    }
-    .green_list_itembox:nth-child(n+2) {
-        display: none;
-    }
-}
 
 .list_item_text {
     width: 100%;
@@ -720,4 +753,191 @@ width: 100%;
 .link {
     display: flex;
     padding: 10px;
+}
+
+/* RWD */
+@media (max-width:597px) {
+
+    /* 綠色生活指南 */
+    #main_bg {
+        padding-top: 35%;
+    }
+
+    #green_life .green_container {
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        display: flex;
+        /* align-items: center; */
+        background: #009858;
+        border-radius: 61px;
+        max-width: 1336px;
+        height: 216px;
+        padding: 9px 9px 4px 23px;
+    }
+
+    #green_life .green_title p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #green_life .mid_line {
+        background-color: #FFFFFF;
+        height: 90%;
+        width: 4px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #green_life .green_text {
+        color: #FFFFFF;
+        font-weight: 400;
+        margin-right: 0px;
+    }
+
+    #green_life .green_text h2 {
+        line-height: 20px;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    #green_life .green_text p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .green_life_href {
+        display: flex;
+        padding-left: 8%;
+        margin-right: 0px;
+    }
+
+    #green_life .green_text_all {
+        padding-top: 0px;
+        padding-left: 4%;
+        align-items: center;
+    }
+
+    #green_life .green_img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .green_life_href p {
+        font-size: 16px;
+    }
+
+    /* 本紀專案 */
+    .green_project2 {
+        flex-direction: column;
+    }
+
+    /* 主頁內容 */
+    .green_main_p,
+    .green_main_p2 {
+        margin: 4%;
+        display: flex;
+        padding-left: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #green_main2 {
+        margin: 4%;
+        flex-wrap: wrap;
+    }
+
+    .green_main_p3 {
+        width: auto;
+    }
+
+    #green_main {
+        flex-wrap: wrap;
+    }
+
+    .green_project1 {
+        width: 70%;
+    }
+
+    /* 頁尾 */
+    .list_box_1 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:992px) {
+    .green_life_href {
+        align-items: center;}
+    .green_list_itembox {
+        margin: 0px 12px;
+    }
+
+    .green_list_itembox:nth-child(n+3) {
+        display: none;
+    }
+
+    .green_main_img2 {
+        margin-left: 31px;
+    }
+
+    .green_main_p {
+        margin-right: 31px;
+    }
+
+    .green_main_p_2 {
+        margin-left: 31px;
+    }
+
+    .green_main_img3 {
+        margin-right: 29px;
+    }
+
+    .green_main_img1 {
+        margin-right: 31px;
+    }
+
+    .green_main_img {
+        margin-left: 31px;
+    }
+}
+/* 動畫效果分頁式 */
+#pagination-container{
+    margin-top: 5%;
+}
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.simple-pagination li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+	color: #666;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.simple-pagination .current {
+	color: #FFF;
+	background-color: #007F1C;
+	border-color: #007F1C;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+	background: #007F1C;
+}
+.list_item_p_t{
+        text-align: center;
+        font-size: 18px;
+        color: #8DBA78;
+        margin: 10px 0;
 }
