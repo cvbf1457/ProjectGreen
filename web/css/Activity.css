@@ -1155,6 +1155,7 @@ a.ui-button:active,
     }
     .green_life_href {
         min-width: 93px;
+        max-width: 93px;
     }
     #green_life .green_container{
         justify-content: space-between;
