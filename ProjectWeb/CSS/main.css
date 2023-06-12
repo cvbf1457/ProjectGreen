@@ -396,7 +396,6 @@ main>* {
 
 .list_item_text {
     margin-top: 20px;
-    margin-bottom: 20px;
     line-height: 26px;
     font-size: 18px;
 }
@@ -749,11 +748,26 @@ main>* {
     /* bottom: 0;*/
 
 }
-
+/* 輪播 */
 .link {
     display: flex;
     padding: 10px;
 }
+.list_item_p_t{
+    text-align: center;
+    font-size: 18px;
+    color: #8DBA78;
+    margin: 10px 0;
+}
+/* 輪播元素 */
+.list_item {
+padding: 0 30px;
+    margin-left: 25%;
+}
+.list_item_text span{
+color: #000000;
+}
+
 
 /* RWD */
 @media (max-width:597px) {
@@ -862,6 +876,10 @@ main>* {
     .list_box_1 {
         flex-direction: column;
     }
+    /* 輪播 */
+    .list_item {
+        margin-left: 5%;
+    }
 }
 
 @media (max-width:992px) {
@@ -901,6 +919,7 @@ main>* {
     .green_project2 {
         flex-wrap: wrap;
     }
+    
 }
 /* 動畫效果分頁式 */
 #pagination-container{
@@ -937,16 +956,4 @@ main>* {
 .simple-pagination .prev.current,
 .simple-pagination .next.current {
 	background: #007F1C;
-}
-.list_item_p_t{
-        text-align: center;
-        font-size: 18px;
-        color: #8DBA78;
-        margin: 10px 0;
-}
-.list_item_p {
-    text-align: center;
-    font-size: 18px;
-    color: #8DBA78;
-    margin: 10px 0;
 }

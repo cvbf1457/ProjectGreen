@@ -807,6 +807,8 @@ main>* {
 
 .list_item {
     padding: 0 30px;
+        margin-left: 25%;
+        background: rgba(217, 217, 217, 0.4);
 }
 
 .list_item_text {
@@ -862,10 +864,6 @@ main>* {
 
     .green_main2 {
         margin-left: 6%;
-    }
-
-    .list_item {
-        width: 211px;
     }
 
     .list_item_img {
@@ -1028,6 +1026,10 @@ main>* {
     }
 
     .list_item {
-        padding: 0px;
+        margin-left: 5%;
     }
+}
+/* 輪播尺寸 */
+.list_item span{
+    color: #000000;
 }

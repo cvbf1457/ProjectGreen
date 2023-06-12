@@ -645,7 +645,8 @@ main>* {
 
 .list_item {
     width: 350px;
-    background: rgb(223 223 223 / 60%);
+    background: rgb(255 255 255 / 30%);
+    box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.1);
     border-radius: 28px;
     overflow: hidden;
     margin: 2%;
@@ -755,4 +756,11 @@ main>* {
         line-height: 57px;
 
     }
+}
+/* 按鈕 */
+button{
+    color: #FFFF;
+    background-color: #8DBA78;
+border: none;
+border-radius: 62px;
 }
