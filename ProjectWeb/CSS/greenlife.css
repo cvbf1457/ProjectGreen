@@ -1013,7 +1013,6 @@ main>* {
 
     .green_fourbox1 {
         flex-direction: column;
-        margin-right: 25%;
     }
 
     .green_main_text ul li {
@@ -1041,6 +1040,9 @@ main>* {
     .list_item {
         margin-left: 5%;
     }
+}
+.title_box{
+    margin-top: 2%;
 }
 
 /* 輪播尺寸 */
