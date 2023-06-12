@@ -870,7 +870,7 @@ main>* {
     }
 
     #green_bg {
-        padding-top: 12%;
+        padding-bottom: 5%;
     }
 
     .green_main2 {
@@ -879,6 +879,13 @@ main>* {
 
     .list_item_img {
         background-position: center;
+    }
+    .green_bg img{
+        width: 400px;
+        height: 300px;
+    }
+    .green_text2 {
+        line-height: 40px;
     }
 }
 

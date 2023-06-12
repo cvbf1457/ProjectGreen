@@ -326,7 +326,7 @@ main>* {
 /* 上方為置中圖片內容文字區 */
 /* 左方懸浮文字區 */
 .floating-box {
-  
+
     position: fixed;
     top: 50%;
     left: 0;
@@ -379,6 +379,7 @@ main>* {
     border-radius: 28px;
 
 }
+
 @keyframes scroll {
     from {
         transform: translateY(100%)
@@ -391,7 +392,7 @@ main>* {
 
 
 .text>p {
-    animation: scroll 40s linear infinite;    
+    animation: scroll 40s linear infinite;
 }
 
 .floating-box h2 {
@@ -751,7 +752,7 @@ button:hover {
 /* RWD */
 @media (max-width:597px) {
     .pg2_box {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .pg2_box_3 {
@@ -774,6 +775,23 @@ button:hover {
         line-height: 57px;
 
     }
+
+    .pg2_box_3 p {
+        line-height: 50px;
+    }
+
+    .title_pg3 p {
+        font-size: 25px;
+    }
+
+    .title_pg3 img {
+        width: 48px;
+    }
+
+    .border_02 {
+        width: 28%;
+        margin-left: 5.5%;
+    }
 }
 
 /* 按鈕 */
@@ -785,5 +803,3 @@ button {
 }
 
 /* 跑馬燈 */
-
-
