@@ -158,7 +158,7 @@ a {
 
 /* header區 */
 #topbar {
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -326,6 +326,7 @@ main>* {
 /* 上方為置中圖片內容文字區 */
 /* 左方懸浮文字區 */
 .floating-box {
+    overflow: hidden;
     position: fixed;
     top: 50%;
     left: 0;
@@ -334,7 +335,7 @@ main>* {
     transform: translateY(-50%);
     border-radius: 10px;
     margin: 30px;
-    z-index: 999;
+    z-index: 998;
 }
 
 @media (max-width:597px) {
@@ -365,7 +366,7 @@ main>* {
 }
 
 .floating-box .text {
-    overflow: hidden;
+ 
     align-items: center;
     justify-content: space-between;
     writing-mode: vertical-rl;
@@ -389,12 +390,8 @@ main>* {
 }
 
 
-.text p {
-    animation: scroll 40s linear infinite;
-
-       
-
-    
+.text>p {
+    animation: scroll 40s linear infinite;    
 }
 
 .floating-box h2 {
