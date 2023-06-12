@@ -359,7 +359,6 @@ main>* {
     background-size: cover;
     background-position: center;
     border-radius: 55px;
-    margin-left: 113px;
 }
 
 .green_fourbox2_item {
@@ -369,7 +368,6 @@ main>* {
     background-size: cover;
     background-position: center;
     border-radius: 55px;
-    margin-left: 113px;
 }
 
 .green_fourbox3_item {
@@ -379,7 +377,6 @@ main>* {
     background-size: cover;
     background-position: center;
     border-radius: 55px;
-    margin-left: 113px;
 }
 
 .green_fourbox4_item {
@@ -389,7 +386,6 @@ main>* {
     background-size: cover;
     background-position: center;
     border-radius: 55px;
-    margin-left: 113px;
 }
 
 .green_fourbox_title {
@@ -400,7 +396,6 @@ main>* {
 }
 
 .green_fourbox_title_bg {
-    margin-left: 126px;
     width: 249px;
     height: 55px;
     line-height: 55px;
@@ -419,8 +414,10 @@ main>* {
 }
 
 .title_box {
+    margin: 0 60px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* 重點資訊 */
