@@ -545,7 +545,7 @@ a {
 
 .card_container .card-body {
     height: 124px;
-    padding: 8px 22px 16px 22px;
+    padding: 16px 22px 16px 22px;
 
 }
 
@@ -1469,3 +1469,23 @@ a.ui-button:active,
 
 
 
+/* 頁尾區 */
+#footer_g{
+    position: relative;
+    width: 100%;
+    background-color: #CBDEC0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon{
+display: flex;
+}
+.footer_p{
+    right: 47%;
+    position: absolute;
+}
+.link{
+    display: flex;
+    padding: 10px;
+}

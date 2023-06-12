@@ -335,3 +335,25 @@ a {
     line-height: 24px;
     color: #000000;
 }
+
+
+/* 頁尾區 */
+#footer_g{
+    position: relative;
+    width: 100%;
+    background-color: #CBDEC0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon{
+display: flex;
+}
+.footer_p{
+    right: 47%;
+    position: absolute;
+}
+.link{
+    display: flex;
+    padding: 10px;
+}
