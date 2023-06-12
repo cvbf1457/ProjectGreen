@@ -165,8 +165,7 @@ a {
     background-color: #164101;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 999;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .logo {
@@ -175,7 +174,6 @@ a {
 }
 
 #topbar .menu {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,22 +182,22 @@ a {
 
 #topbar .link {
     display: block;
-    padding: 12px 16px;
-    font-family: 'Noto Sans TC';
+    padding: 12px 16px 16px 16px;
+
     font-size: 18px;
     color: white;
-    font-weight: 400;
+    font-weight: 200;
     transition: all .3s;
 }
 
 #topbar .link_dona {
     display: block;
-    margin: 4px 4px 6px 4px;
-    padding: 8px 12px 6px 12px;
-    font-family: 'Noto Sans TC';
+    margin: 6px 4px 8px 4px;
+    padding: 6px 12px 8px 12px;
+
     font-size: 18px;
     color: white;
-    font-weight: 400;
+    font-weight: 200;
     background-color: #649B5B;
     border-radius: 25px;
     transition: all .3s;
@@ -212,6 +210,7 @@ a {
 #topbar .link_dona:hover {
     background-color: #8db891;
 }
+
 
 /* 。內容區 */
 #carouselExampleIndicators {
@@ -327,6 +326,7 @@ main>* {
 /* 上方為置中圖片內容文字區 */
 /* 左方懸浮文字區 */
 .floating-box {
+  
     position: fixed;
     top: 50%;
     left: 0;
@@ -335,7 +335,7 @@ main>* {
     transform: translateY(-50%);
     border-radius: 10px;
     margin: 30px;
-    z-index: 999;
+    z-index: 998;
 }
 
 @media (max-width:597px) {
@@ -366,7 +366,7 @@ main>* {
 }
 
 .floating-box .text {
-
+    overflow: hidden;
     align-items: center;
     justify-content: space-between;
     writing-mode: vertical-rl;
@@ -378,6 +378,20 @@ main>* {
     box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.25);
     border-radius: 28px;
 
+}
+@keyframes scroll {
+    from {
+        transform: translateY(100%)
+    }
+
+    to {
+        transform: translateY(-100%)
+    }
+}
+
+
+.text>p {
+    animation: scroll 40s linear infinite;    
 }
 
 .floating-box h2 {
@@ -533,6 +547,10 @@ main>* {
     padding-left: 40px;
 }
 
+button:hover {
+    opacity: 70%;
+}
+
 .pg2_box_3text {
     font-size: 20px;
 
@@ -645,7 +663,8 @@ main>* {
 
 .list_item {
     width: 350px;
-    background: rgb(223 223 223 / 60%);
+    background: rgb(255 255 255 / 30%);
+    box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.1);
     border-radius: 28px;
     overflow: hidden;
     margin: 2%;
@@ -756,3 +775,15 @@ main>* {
 
     }
 }
+
+/* 按鈕 */
+button {
+    color: #FFFF;
+    background-color: #8DBA78;
+    border: none;
+    border-radius: 62px;
+}
+
+/* 跑馬燈 */
+
+

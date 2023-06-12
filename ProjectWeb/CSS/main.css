@@ -164,15 +164,14 @@ main>* {
 
 /* header區 */
 #topbar {
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     left: 0;
     background-color: #164101;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 999;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .logo {
@@ -181,7 +180,6 @@ main>* {
 }
 
 #topbar .menu {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,22 +188,22 @@ main>* {
 
 #topbar .link {
     display: block;
-    padding: 12px 16px;
-    font-family: 'Noto Sans TC';
+    padding: 12px 16px 16px 16px;
+
     font-size: 18px;
     color: white;
-    font-weight: 400;
+    font-weight: 200;
     transition: all .3s;
 }
 
 #topbar .link_dona {
     display: block;
-    margin: 4px 4px 6px 4px;
-    padding: 8px 12px 6px 12px;
-    font-family: 'Noto Sans TC';
+    margin: 6px 4px 8px 4px;
+    padding: 6px 12px 8px 12px;
+
     font-size: 18px;
     color: white;
-    font-weight: 400;
+    font-weight: 200;
     background-color: #649B5B;
     border-radius: 25px;
     transition: all .3s;
@@ -218,6 +216,7 @@ main>* {
 #topbar .link_dona:hover {
     background-color: #8db891;
 }
+
 
 /* 頁首 */
 #main_bg {
@@ -396,7 +395,6 @@ main>* {
 
 .list_item_text {
     margin-top: 20px;
-    margin-bottom: 20px;
     line-height: 26px;
     font-size: 18px;
 }
@@ -749,11 +747,26 @@ main>* {
     /* bottom: 0;*/
 
 }
-
+/* 輪播 */
 .link {
     display: flex;
     padding: 10px;
 }
+.list_item_p_t{
+    text-align: center;
+    font-size: 18px;
+    color: #8DBA78;
+    margin: 10px 0;
+}
+/* 輪播元素 */
+.list_item {
+padding: 0 30px;
+    margin-left: 25%;
+}
+.list_item_text span{
+color: #000000;
+}
+
 
 /* RWD */
 @media (max-width:597px) {
@@ -862,6 +875,10 @@ main>* {
     .list_box_1 {
         flex-direction: column;
     }
+    /* 輪播 */
+    .list_item {
+        margin-left: 5%;
+    }
 }
 
 @media (max-width:992px) {
@@ -901,6 +918,7 @@ main>* {
     .green_project2 {
         flex-wrap: wrap;
     }
+    
 }
 /* 動畫效果分頁式 */
 #pagination-container{
@@ -937,16 +955,4 @@ main>* {
 .simple-pagination .prev.current,
 .simple-pagination .next.current {
 	background: #007F1C;
-}
-.list_item_p_t{
-        text-align: center;
-        font-size: 18px;
-        color: #8DBA78;
-        margin: 10px 0;
-}
-.list_item_p {
-    text-align: center;
-    font-size: 18px;
-    color: #8DBA78;
-    margin: 10px 0;
 }
