@@ -934,7 +934,6 @@ main>* {
     }
 
     #green_bg {
-        padding-top: 31%;
         display: flex;
         justify-content: center;
     }
@@ -949,7 +948,7 @@ main>* {
         flex-direction: column;
         font-size: 0.8rem;
         color: #ffff;
-        font-weight: 700;
+        font-weight: 0;
         line-height: 23px;
         padding-left: 10%;
     }
@@ -1012,6 +1011,7 @@ main>* {
 
     .green_text2 {
         font-size: 1rem;
+        line-height: 30px;
     }
 
     .green_main_2 h1 {
