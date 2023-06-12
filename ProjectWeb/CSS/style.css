@@ -326,7 +326,7 @@ main>* {
 /* 上方為置中圖片內容文字區 */
 /* 左方懸浮文字區 */
 .floating-box {
-    overflow: hidden;
+  
     position: fixed;
     top: 50%;
     left: 0;
@@ -366,7 +366,7 @@ main>* {
 }
 
 .floating-box .text {
- 
+    overflow: hidden;
     align-items: center;
     justify-content: space-between;
     writing-mode: vertical-rl;
