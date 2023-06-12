@@ -531,7 +531,9 @@ main>* {
     align-self: flex-end;
     padding-left: 40px;
 }
-
+button:hover{
+    opacity: 70%;
+}
 .pg2_box_3text {
     font-size: 20px;
 
