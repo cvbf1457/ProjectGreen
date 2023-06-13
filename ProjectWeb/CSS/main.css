@@ -549,6 +549,7 @@ main>* {
 }
 
 .green_main_a {
+    color: #000000;
     width: 183px;
     height: 36px;
     display: flex;
@@ -556,7 +557,16 @@ main>* {
     border: 1px solid #000000;
     margin-top: 20px;
 }
+.green_main_a:hover {
+    color: #FFFF;
+    background-color: #2E8F00;
+    margin-top: 20px;
+    transition: .5s ease;
+}
 
+.green_main_icon:hover{
+
+}
 .green_main_a1 {
     display: flex;
     align-items: center;
@@ -711,6 +721,9 @@ main>* {
     .green_list_itembox:nth-child(n+4) {
         display: none;
     }
+    #green_life .green_img{
+        background-image: none;
+    }
 }
 
 
@@ -833,6 +846,7 @@ color: #000000;
     #green_life .green_img {
         width: 300px;
         height: 150px;
+        background-image: none;
     }
 
     .green_life_href p {

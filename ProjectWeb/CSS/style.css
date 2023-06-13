@@ -419,7 +419,6 @@ main>* {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-left: 2%;
 }
 
 .pg2_box_ {
@@ -742,6 +741,7 @@ button:hover {
 @media (max-width:597px) {
     .pg2_box {
         flex-direction: column-reverse;
+
     }
 
     .pg2_box_3 {
@@ -802,6 +802,8 @@ button:hover {
     .pg2_box_21 {
         margin-top: 5%;
     }
+    .pg2_box{
+    margin-left: 2%;}
 }
 
 /* 按鈕 */
