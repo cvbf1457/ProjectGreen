@@ -201,7 +201,7 @@ a {
 
 
 #about_us {
-    height:scale(100vh - 167px);
+    min-height:calc(100vh - 167px);
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 120px;
