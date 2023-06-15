@@ -238,7 +238,8 @@ a {
 #dona_top .title {
     display: flex;
     height: 100%;
-    animation: float1 1s ease-out .3s both;
+    animation: float1 1s ease-out both;
+    opacity: 0;
 }
 
 #dona_top .title_box {
@@ -278,7 +279,8 @@ a {
     justify-content: center;
     max-width: 440px;
     margin: 0 40px;
-
+    animation: float1 1s ease-out .5s both;
+    opacity: 0;
 }
 
 #dona_top .content_title {
@@ -301,6 +303,12 @@ a {
 #dona_top .all_img {
     position: relative;
     width: 100%;
+    animation: float1 1s ease-out 1s both;
+    opacity: 0;
+}
+
+.scroll_animation{
+    animation: float1 1s ease-out both;
 }
 
 #dona_top .all_img img {
@@ -336,13 +344,11 @@ a {
 
 @keyframes float1{
     from{
-        position: relative;
-        margin-top: 150px;
+        transform: translateY(150px);
         opacity: 0;
     }
     to{
-        position: relative;
-        margin-top: 0px;
+        transform: translateY(0px);
         opacity: 1;
     }
 }
@@ -357,6 +363,7 @@ a {
     max-width: 1300px;
     margin: auto;
     margin-bottom: 250px;
+    opacity: 0;
 }
 
 #dona_3 {
