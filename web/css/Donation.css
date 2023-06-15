@@ -222,7 +222,7 @@ a {
     max-width: 1300px;
     height: 700px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto; 
 }
 
 #dona_top .mid_title {
@@ -230,7 +230,6 @@ a {
     justify-content: center;
     margin-top: 70px;
     margin-bottom: 40px;
-
     font-weight: 400;
     font-size: 24px;
     color: #000000;
@@ -239,6 +238,8 @@ a {
 #dona_top .title {
     display: flex;
     height: 100%;
+    animation: float1 1s ease-out both;
+    opacity: 0;
 }
 
 #dona_top .title_box {
@@ -269,7 +270,7 @@ a {
 
 #dona_top .dona_content_img {
     display: flex;
-    width: 100%;
+    width: 100%; 
 }
 
 #dona_top .dona_content {
@@ -278,6 +279,8 @@ a {
     justify-content: center;
     max-width: 440px;
     margin: 0 40px;
+    animation: float1 1s ease-out .5s both;
+    opacity: 0;
 }
 
 #dona_top .content_title {
@@ -300,6 +303,12 @@ a {
 #dona_top .all_img {
     position: relative;
     width: 100%;
+    animation: float1 1s ease-out 1s both;
+    opacity: 0;
+}
+
+.scroll_animation{
+    animation: float1 1s ease-out both;
 }
 
 #dona_top .all_img img {
@@ -320,7 +329,7 @@ a {
 }
 
 #dona_top .img_2 {
-    bottom: 0;
+    top: 350px;
     right: 8vw;
     max-width: 400px;
     height: 280px;
@@ -333,6 +342,17 @@ a {
     height: 250px;
 }
 
+@keyframes float1{
+    from{
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 /* 綠色和平 */
 
 #dona_1,
@@ -343,6 +363,7 @@ a {
     max-width: 1300px;
     margin: auto;
     margin-bottom: 250px;
+    opacity: 0;
 }
 
 #dona_3 {
