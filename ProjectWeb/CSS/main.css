@@ -234,6 +234,17 @@ main>* {
 
 /* 綠色生活指南布告欄 */
 /* 綠色生活指南 */
+.fa-angle-right {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #000000;
+}
+
+.all_activity_bar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 
 #green_life {
     margin-top: 50px;
@@ -280,10 +291,10 @@ main>* {
 }
 
 #green_life .green_text {
-
+    max-width: 450px;
     color: #FFFFFF;
     font-weight: 400;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 #green_life .green_text h2 {
@@ -297,9 +308,9 @@ main>* {
 }
 
 .green_life_href {
-    display: flex;
-    align-items: end;
-    margin-right: 50px;
+    margin-right: 30px;
+    padding-top: 50px;
+    min-width: 93px;
 }
 
 .green_life_href p {
@@ -307,28 +318,79 @@ main>* {
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
-    margin-right: 10px;
+    margin-right: 4px;
 }
 
-.green_life_href p::after {
+.green_life_href::after {
     content: "";
     display: block;
     width: 0%;
-    height: 1.5px;
+    height: 2px;
     background-color: #FFFFFF;
     transition: .35s;
+
 }
 
-.green_life_href p:hover::after {
+.green_life_href:hover::after {
     width: 100%;
 }
 
 
 #green_life .green_img {
     background-image: url('../image/greenlife_1.png');
-    width: 280px;
+    min-width: 280px;
     height: 300px;
     background-size: 100% 100%;
+}
+
+
+@media (max-width:992px) {
+    #green_life .green_img {
+        display: none;
+    }
+
+    .green_life_href {
+        min-width: 93px;
+        max-width: 93px;
+    }
+
+    #green_life .green_container {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:767px) {
+
+    #green_life .green_text_all {
+        display: block;
+    }
+
+    .green_life_href {
+        padding-top: 0;
+    }
+
+    #green_life .green_text p {
+        display: none;
+    }
+
+    #green_life .green_container {
+        padding: 40px 50px 40px 50px;
+    }
+
+    #green_life .green_text {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    #green_life .mid_line {
+        display: none;
+    }
+
+    #green_life .green_container {
+        display: block;
+        height: auto;
+    }
 }
 
 /* 本季專案 */
@@ -557,16 +619,12 @@ main>* {
     border: 1px solid #000000;
     margin-top: 20px;
 }
+
 .green_main_a:hover {
-    color: #FFFF;
-    background-color: #2E8F00;
-    margin-top: 20px;
+opacity: 0.5;
     transition: .5s ease;
 }
 
-.green_main_icon:hover{
-
-}
 .green_main_a1 {
     display: flex;
     align-items: center;
@@ -721,7 +779,8 @@ main>* {
     .green_list_itembox:nth-child(n+4) {
         display: none;
     }
-    #green_life .green_img{
+
+    #green_life .green_img {
         background-image: none;
     }
 }
@@ -760,98 +819,33 @@ main>* {
     /* bottom: 0;*/
 
 }
+
 /* 輪播 */
 .link {
     display: flex;
     padding: 10px;
 }
-.list_item_p_t{
+
+.list_item_p_t {
     text-align: center;
     font-size: 18px;
     color: #8DBA78;
     margin: 10px 0;
 }
+
 /* 輪播元素 */
 .list_item {
-padding: 0 30px;
+    padding: 0 30px;
     margin-left: 25%;
 }
-.list_item_text span{
-color: #000000;
+
+.list_item_text span {
+    color: #000000;
 }
 
 
 /* RWD */
 @media (max-width:597px) {
-
-    /* 綠色生活指南 */
-    #main_bg {
-        padding-top: 35%;
-    }
-
-    #green_life .green_container {
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        display: flex;
-        /* align-items: center; */
-        background: #009858;
-        border-radius: 61px;
-        max-width: 1336px;
-        height: 216px;
-        padding: 9px 9px 4px 23px;
-    }
-
-    #green_life .green_title p {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    #green_life .mid_line {
-        background-color: #FFFFFF;
-        height: 90%;
-        width: 4px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    #green_life .green_text {
-        color: #FFFFFF;
-        font-weight: 400;
-        margin-right: 0px;
-    }
-
-    #green_life .green_text h2 {
-        line-height: 20px;
-        font-size: 16px;
-        margin-bottom: 0px;
-    }
-
-    #green_life .green_text p {
-        font-size: 12px;
-        line-height: 22px;
-    }
-
-    .green_life_href {
-        display: flex;
-        padding-left: 8%;
-        margin-right: 0px;
-    }
-
-    #green_life .green_text_all {
-        padding-top: 0px;
-        padding-left: 4%;
-        align-items: center;
-    }
-
-    #green_life .green_img {
-        width: 300px;
-        height: 150px;
-        background-image: none;
-    }
-
-    .green_life_href p {
-        font-size: 16px;
-    }
 
     /* 本紀專案 */
     .green_project2 {
@@ -889,6 +883,7 @@ color: #000000;
     .list_box_1 {
         flex-direction: column;
     }
+
     /* 輪播 */
     .list_item {
         margin-left: 5%;
@@ -897,7 +892,9 @@ color: #000000;
 
 @media (max-width:992px) {
     .green_life_href {
-        align-items: center;}
+        align-items: center;
+    }
+
     .green_list_itembox {
         margin: 0px 12px;
     }
@@ -929,44 +926,47 @@ color: #000000;
     .green_main_img {
         margin-left: 31px;
     }
+
     .green_project2 {
         flex-wrap: wrap;
     }
-    
+
 }
+
 /* 動畫效果分頁式 */
-#pagination-container{
+#pagination-container {
     margin-top: 5%;
 }
+
 .simple-pagination ul {
-	margin: 0 0 20px;
-	padding: 0;
-	list-style: none;
-	text-align: center;
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
 }
 
 .simple-pagination li {
-	display: inline-block;
-	margin-right: 5px;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .simple-pagination li a,
 .simple-pagination li span {
-	color: #666;
-	padding: 5px 10px;
-	text-decoration: none;
-	border: 1px solid #EEE;
-	background-color: #FFF;
-	box-shadow: 0px 0px 10px 0px #EEE;
+    color: #666;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #EEE;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px 0px #EEE;
 }
 
 .simple-pagination .current {
-	color: #FFF;
-	background-color: #007F1C;
-	border-color: #007F1C;
+    color: #FFF;
+    background-color: #007F1C;
+    border-color: #007F1C;
 }
 
 .simple-pagination .prev.current,
 .simple-pagination .next.current {
-	background: #007F1C;
+    background: #007F1C;
 }
