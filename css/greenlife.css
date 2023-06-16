@@ -1059,3 +1059,18 @@ main>* {
 .list_item span {
     color: #000000;
 }
+/* top按鈕 */
+#gotop{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 999;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: #007F1C;
+	font-size: 2.2rem;
+	color: #FFFF;
+	line-height: 40px;
+	text-align: center;
+}
