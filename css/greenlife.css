@@ -912,6 +912,9 @@ main>* {
     #green_bgsize3 {
         background-image: none;
     }
+    .green_main h1 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width:597px) {
