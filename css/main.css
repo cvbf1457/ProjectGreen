@@ -862,9 +862,6 @@ main>* {
 @media (max-width:597px) {
 
     /* 本紀專案 */
-    .green_project2 {
-        flex-direction: column;
-    }
 
     /* 主頁內容 */
     .green_main_p,
