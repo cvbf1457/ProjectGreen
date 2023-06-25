@@ -258,13 +258,10 @@ main>* {
     background-color: #8db891;
 }
 
-
-.off-canvas{
-    transform: translateY(-100px);
-}
 .fixed {
-    transform: translateY(0px);
-  } 
+    transform: translateY(0px) !important;
+} 
+
 
 
 /* 開頭背景 */
