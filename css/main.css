@@ -861,7 +861,10 @@ main>* {
 
 /* RWD */
 @media (max-width:597px) {
-
+    .green_box_title_p{
+        margin: 10%;
+        font-size: 20px;
+    }
     /* 本紀專案 */
 
     /* 主頁內容 */
@@ -902,6 +905,10 @@ main>* {
 }
 
 @media (max-width:992px) {
+    .green_box_title_p{
+        margin: 10%;
+      
+    }
     .green_life_href {
         align-items: center;
     }
