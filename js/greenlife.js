@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //滑動至頂
     $('#gotop').click(function () {
-        $('html,body').animate({ scrollTop: 0 }, 100);
+        $('html,body').animate({ scrollTop: 0 }, 50);
     });
     // 至頂按鈕淡出淡入\
     $(window).scroll(function () {

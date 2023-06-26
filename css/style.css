@@ -165,8 +165,9 @@ a {
     z-index: 999;
 
 }
-#topbar nav{
-    position:relative;
+
+#topbar nav {
+    position: relative;
     background-color: #164101;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 997;
@@ -174,7 +175,7 @@ a {
 }
 
 #topbar .logo {
-    position:relative;
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: #164101;
@@ -222,7 +223,7 @@ a {
 
 .fixed {
     transform: translateY(0px) !important;
-} 
+}
 
 
 
@@ -780,7 +781,9 @@ button:hover {
     }
 
     .pg2_box_3 p {
+        padding: 0 3%;
         line-height: 50px;
+        padding-bottom: 2%;
     }
 
     .title_pg3 p {
@@ -803,21 +806,28 @@ button:hover {
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:992px) {
     .floating-box {
         display: none;
     }
 
     .pg2_box_3 {
-        margin-left: 5%;
-        margin-right: 1%;
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+    .pg2_box_21{
+        padding-top: 4%;
+    }
+}
+
+@media (max-width:576px) {
+    .floating-box {
+        display: none;
     }
 
-    .pg2_box_21 {
-        margin-top: 5%;
+    .pg2_box_3 {
+        margin: 0 auto;
     }
-    .pg2_box{
-    margin-left: 2%;}
 }
 
 /* 按鈕 */
