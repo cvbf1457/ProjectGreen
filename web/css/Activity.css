@@ -250,10 +250,11 @@ a {
     top: 0;
     left: 0;
     z-index: 999;
-    
+
 }
-#topbar nav{
-    position:relative;
+
+#topbar nav {
+    position: relative;
     background-color: #164101;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 997;
@@ -261,7 +262,7 @@ a {
 }
 
 #topbar .logo {
-    position:relative;
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: #164101;
@@ -272,7 +273,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 
 }
 
@@ -309,7 +310,7 @@ a {
 
 .fixed {
     transform: translateY(0px) !important;
-  }
+}
 
 /* 即將截止 */
 
@@ -715,15 +716,20 @@ a {
     #sync1 .activity_button {
         position: absolute;
         bottom: -15px;
-        right: -100px;
+        right: -70px;
+        padding: 4px 6px;
+    }
+
+    #sync1 .activity_text {
+        font-size: 12px;
     }
 
     #sync1 .title h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #sync1 .content {
-        padding: 20px 35px 30px 24px;
+        padding: 16px 35px 24px 12px;
     }
 
     .article span {
@@ -1042,7 +1048,7 @@ a.ui-button:active,
     #partner .img_3,
     #partner .img_6 {
         top: -27px;
-        right: 22   0px;
+        right: 22 0px;
     }
 
 
