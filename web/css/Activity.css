@@ -1567,6 +1567,13 @@ a.ui-button:active,
 }
 
 
+/* 警告 */
+#warn{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 24px;
+}
 
 
 /* 頁尾區 */

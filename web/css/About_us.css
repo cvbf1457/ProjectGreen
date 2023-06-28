@@ -215,7 +215,7 @@ a {
 
 
 #about_us {
-    min-height:calc(100vh - 167px);
+    min-height:calc(100vh - 191px);
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 120px;
@@ -394,7 +394,6 @@ a.ui-button:active,
 #picture {
     flex: 1;
     height: 500px;
-    margin-bottom: 150px;
 }
 
 .photo_all {
@@ -1053,6 +1052,14 @@ a.ui-button:active,
         height: 100%;
         margin-left: 0;
     }
+}
+
+/* 警告 */
+#warn{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 24px;
 }
 
 /* 頁尾區 */
